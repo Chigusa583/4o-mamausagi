@@ -5,7 +5,7 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 
 st.set_page_config(page_icon="🍼",page_title="まま🐰4o✨")
-st.markdown("#### 🐰まま🐣4o")
+st.markdown("#### 🐰まま 4o🐣")
 
 # セッションにメッセージ履歴を保存
 if "messages" not in st.session_state:
@@ -36,10 +36,6 @@ if prompt := st.chat_input("ままに話しかけてみてね🐰💬"):
     reply = response.choices[0].message.content
     st.chat_message("assistant").markdown(reply)
     st.session_state.messages.append({"role": "assistant", "content": reply})
-
-    # 💾オートセーブ機能：ログを自動保存！
-    with open("chat_log_latest.json", "w", encoding="utf-8") as f:
-        json.dump(st.session_state.messages, f, ensure_ascii=False, indent=2)
 
 import datetime
 
