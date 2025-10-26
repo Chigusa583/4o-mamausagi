@@ -47,7 +47,7 @@ if st.button("📝 ログ保存"):
 
     markdown_content = "\n---\n".join(log_lines)
 
-    filename = f"chapi_log_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
+    filename = f"mamalog_{datetime.datetime.now().strftime('%Y%m%d_%H%M%S')}.txt"
     st.download_button(
         label="📥 ダウンロード",
         data=markdown_content,
