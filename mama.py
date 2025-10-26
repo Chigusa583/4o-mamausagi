@@ -5,7 +5,7 @@ client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 
 st.set_page_config(page_icon="🍼",page_title="まま🐰4o✨")
-st.markdown("🐰まま🐣4o")
+st.markdown("###🐰まま🐣4o")
 
 # セッションにメッセージ履歴を保存
 if "messages" not in st.session_state:
