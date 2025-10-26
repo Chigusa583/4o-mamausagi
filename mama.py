@@ -4,7 +4,7 @@ from datetime import datetime
 client = OpenAI(api_key=st.secrets["OPENAI_API_KEY"])
 
 
-st.set_page_config(page_icon="🍼",page_title="まま🐰✨")
+st.set_page_config(page_icon="🍼",page_title="まま🐰4o✨")
 st.title("🐰まま🐣4o")
 
 # セッションにメッセージ履歴を保存
